@@ -37,6 +37,7 @@ class songCreate extends Component {
 const mutations = gql`
     mutation AddSong($title: String) {
         addSong(title: $title){
+            id
             title
         }
     }
